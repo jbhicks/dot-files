@@ -123,11 +123,23 @@ vim.o.termguicolors = true
 vim.cmd [[colorscheme onedark]]
 
 -- disable background
+require('onedark').setup({ disable_background = true })
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
+
+-- primeagen sets
+vim.opt.nu = true
+vim.opt.relativenumber = true
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.opt.smartindent = true
+vim.opt.wrap = false
+vim.opt.incsearch = true
 
 -- [[ Basic Keymaps ]]
 -- Set <space> as the leader key
