@@ -9,4 +9,8 @@ fi
 # Stow the contents of the zsh directory
 stow -t ~/ zsh
 
-echo "Stowing of zsh configuration complete."
+mkdir ~/.config/alacritty
+stow --target ~/.config/alacritty alacritty
+
+mkdir ~/.config/nvim
+stow --target ~/.config/nvim nvim
