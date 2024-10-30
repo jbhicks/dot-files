@@ -7,10 +7,16 @@ if ! command -v stow &> /dev/null; then
 fi
 
 # Stow the contents of the zsh directory
-stow -t ~/ zsh
+stow zsh
 
 mkdir ~/.config/alacritty
-stow --target ~/.config/alacritty alacritty
+stow -t ~/.config/alacritty alacritty
 
 mkdir ~/.config/nvim
-stow --target ~/.config/nvim nvim
+stow -t ~/.config/nvim nvim
+
+mkdir ~/.newsboat
+stow -t ~/.newsboat newsboat
+
+stow -t ~ tmux
+stow -t ~/.config/i3 i3
