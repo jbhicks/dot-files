@@ -6,3 +6,4 @@ Prerequisites:
 * alacritty
 * tmux
 * i3
+* Newsboat
