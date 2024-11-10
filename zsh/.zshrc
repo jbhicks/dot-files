@@ -34,10 +34,6 @@ eval "$(starship init zsh)"
 
 alias ls="exa -la"
 
-export sc_a_id="20cfd6d050175896f575cdef54de242f5e1c6013"
-export sc_client_id="e5qtqnBx108ZVHabnxYWmtRiknqDLQ2W"
-export sc_auth_token="OAuth 2-297843-141564746-JSyGKUj4n8jsxC"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
