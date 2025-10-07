@@ -1,0 +1,13 @@
+lazydocker-bin
+lazydocker-bin-debug
+lmstudio
+localsend-bin
+obsidian-bin
+ttf-ia-writer
+typora
+typora-debug
+tzupdate
+tzupdate-debug
+ufw-docker
+walker-bin
+walker-bin-debug

@@ -1,0 +1,11 @@
+my_go_saas_template_pb	my-go-saas-template-app	Up 16 hours (healthy)
+coolify	ghcr.io/coollabsio/coolify:4.0.0-beta.431	Up 8 days (healthy)
+coolify-db	postgres:15-alpine	Up 8 days (healthy)
+coolify-redis	redis:7-alpine	Up 8 days (healthy)
+coolify-realtime	ghcr.io/coollabsio/coolify-realtime:1.0.10	Up 8 days (healthy)
+wyoming-piper	rhasspy/wyoming-piper	Up 8 days
+wyoming-whisper	rhasspy/wyoming-whisper	Up 8 days
+rocsg40k4wcc8ccgok8kw48w-021310970851	rocsg40k4wcc8ccgok8kw48w:efc811c718aa59fd581485f02c2c27daa6f1fa6b	Up 8 days
+vcsssssswg0osc4sgcokwgcw	postgres:17-alpine	Up 8 days (healthy)
+pihole	pihole/pihole:latest	Up 3 days (healthy)
+homeassistant	ghcr.io/home-assistant/home-assistant:stable	Up 8 days

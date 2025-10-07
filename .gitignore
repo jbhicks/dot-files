@@ -1,1 +1,31 @@
 sensitive.sh
+
+*.log
+*.cache
+__pycache__/
+*.pyc
+*.pyo
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Sensitive files
+.git-credentials
+.gnupg/
+*.key
+*.pem
+*.crt
+id_rsa*
+id_ed25519*
+
+# GitHub CLI credentials
+gh/hosts.yml
+**/gh/hosts.yml
+
+# Cache directories
+.cache/
+cache/
+
+# System-specific
+*.local

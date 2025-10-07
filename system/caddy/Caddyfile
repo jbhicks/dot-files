@@ -1,0 +1,59 @@
+{
+	# Remove admin socket config for container
+}
+
+# Local service routing (no ports needed)
+coolify.local {
+	tls internal
+	reverse_proxy localhost:8000 {
+		header_up Host {upstream_hostport}
+		header_up X-Real-IP {remote_host}
+	}
+}
+
+homeassistant.local {
+	tls internal
+	reverse_proxy localhost:8123 {
+		transport http {
+			versions 1.1 2
+		}
+	}
+}
+
+pihole.local {
+	tls internal
+	reverse_proxy localhost:8080 {
+		header_up Host {upstream_hostport}
+		header_up X-Real-IP {remote_host}
+	}
+}
+
+# External access via IP address (preserves your existing access)
+192.168.1.48 {
+	# Default to Home Assistant (like before)
+	handle {
+		reverse_proxy localhost:8123 {
+			transport http {
+				versions 1.1 2
+			}
+		}
+	}
+	
+	# Coolify access at /coolify
+	handle /coolify* {
+		uri strip_prefix /coolify
+		reverse_proxy localhost:8000 {
+			header_up Host {upstream_hostport}
+			header_up X-Real-IP {remote_host}
+		}
+	}
+	
+	# Pi-hole access at /pihole  
+	handle /pihole* {
+		uri strip_prefix /pihole
+		reverse_proxy localhost:8080 {
+			header_up Host {upstream_hostport}
+			header_up X-Real-IP {remote_host}
+		}
+	}
+}

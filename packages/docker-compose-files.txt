@@ -1,0 +1,9 @@
+/home/josh/pihole/docker-compose.yml
+/home/josh/avrnpo.org/archived/docker-compose.yml
+/home/josh/go/pkg/mod/github.com/gobuffalo/pop/v6@v6.1.1/docker-compose.yml
+/home/josh/go/pkg/mod/github.com/gobuffalo/fizz@v1.14.4/docker-compose.yml
+/home/josh/go/pkg/mod/github.com/gobuffalo/pop@v4.13.1+incompatible/docker-compose.yml
+/home/josh/go/pkg/mod/github.com/goccy/go-json@v0.10.2/docker-compose.yml
+/home/josh/caddy/docker-compose.yml
+/home/josh/sound-cistern/docker-compose.yml
+/home/josh/my-go-saas-template/docker-compose.yml

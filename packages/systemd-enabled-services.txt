@@ -1,0 +1,21 @@
+UNIT FILE                         STATE   PRESET
+avahi-daemon.service              enabled disabled
+bluetooth.service                 enabled disabled
+caddy.service                     enabled disabled
+cups-browsed.service              enabled disabled
+cups.service                      enabled disabled
+docker.service                    enabled disabled
+iptables.service                  enabled disabled
+iwd.service                       enabled disabled
+nvidia-hibernate.service          enabled disabled
+nvidia-resume.service             enabled disabled
+nvidia-suspend.service            enabled disabled
+ollama.service                    enabled disabled
+omarchy-seamless-login.service    enabled disabled
+sshd.service                      enabled disabled
+systemd-network-generator.service enabled enabled
+systemd-networkd.service          enabled enabled
+systemd-timesyncd.service         enabled enabled
+tailscaled.service                enabled disabled
+
+18 unit files listed.
